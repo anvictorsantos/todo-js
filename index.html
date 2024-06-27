@@ -19,10 +19,11 @@
 <body>
     <section class="flex flex-col bg-gradient-to-r from-purple-500 to-fuchsia-500 h-screen">
         <div class="top-2/4 left-1/2 absolute border-2 px-10 py-8 w-2/5 min-w-10 -translate-x-1/2 -translate-y-1/2">
-            <div class="relative bg-white shadow-2xl px-5 py-8 rounded-md">
-                <input type="text" placeholder="Task to be done…" class="relative border-2 p-3 w-3/5 h-11 font-medium text-sm">
+            <div class="relative bg-white shadow-2xl px-5 py-8 rounded-md" id="new-task">
+                <input type="text" placeholder="Task to be done…" class="relative border-2 focus:border-violet-500 p-3 rounded w-3/5 h-11 font-medium text-sm focus:outline">
                 <button id="push" class="relative float-right bg-violet-500 border-solid rounded w-3/12 h-11 font-medium text-base text-white cursor-pointer">Add</button>
             </div>
+            <div class="relative bg-white shadow-2xl mt-16 px-10 py-8 rounded-xl w-full" id="tasks"></div>
         </div>
     </section>
     <script src="js/main.js"></script>
